@@ -39,7 +39,7 @@ Uses `GradientTape` on the trained MLP to compute how peak stress changes with e
 |---------|-----------|
 | 0.69 | 12.1% |
 
-<img src="Results/StressSensitivityvsVolumeFraction.png" width="350"/>
+<img src="results/StressSensitivityvsVolumeFraction.png" width="350"/>
 
 ---
 
@@ -51,7 +51,7 @@ Treats nodal thicknesses as differentiable variables and minimizes surrogate-pre
 |---------|-----------|----------------|------------------|
 | 0.62 | 13.27% | 15,567,858 Pa | 4,418,916 Pa |
 
-<img src="Results/PredictedStressvsIteration.png" width="350"/> <img src="Results/OptimizedMaterialDistribution.png" width="483"/>
+<img src="results/PredictedStressvsIteration.png" width="350"/> <img src="results/OptimizedMaterialDistribution.png" width="483"/>
 
 ---
 
@@ -63,7 +63,7 @@ Same setup as above using SGD. Direct comparison in convergence speed and final 
 |---------|-----------|------------------|
 | 0.67 | 11.80% | 47.11% |
 
-<img src="Results/PredictedStressvsIterationSGD.png" width="350"/> <img src="Results/OptimizedStressDistributionSGD.png" width="483"/>
+<img src="results/PredictedStressvsIterationSGD.png" width="350"/> <img src="results/OptimizedStressDistributionSGD.png" width="483"/>
 
 ---
 
@@ -75,7 +75,7 @@ The thickness vector is reshaped into an 11×21 spatial grid and fed into a CNN,
 |---------|-----------|
 | 0.7639 | 14.01% |
 
-<img src="Results/WorstvsBestPredictionHeatMap.png" width="600"/>
+<img src="results/WorstvsBestPredictionHeatMap.png" width="600"/>
 
 ---
 
@@ -89,7 +89,7 @@ A U-Net encoder-decoder predicts von Mises stress at all 3,304 nodes. Peak stres
 | Test R² | 0.59 | 0.66 |
 | Test MAPE |  | 12.75% |
 
-<img src="Results/UnetParityNodewise.png" width="600"/>
+<img src="results/UnetParityNodewise.png" width="600"/>
 
 ---
 
@@ -118,7 +118,7 @@ stress-surrogate-optimization/
 │   ├── stress_prediction_cnn.ipynb
 │   └── stress_field_unet.ipynb
 │
-├── Results/
+├── results/
 ├── data/
 │   └── README.md
 ├── requirements.txt
