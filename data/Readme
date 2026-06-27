@@ -1,0 +1,36 @@
+# Dataset
+
+The dataset is not committed to this repository due to size (~943 MB).
+
+**Download:** [Click here to download the dataset](https://drive.google.com/file/d/1aQ6b3ak6IMUdNIguPCeuAWoPSKqHOe5b/view?usp=sharing)
+
+After downloading, extract the zip and place the contents in this directory so the structure looks like this:
+
+data/
+├── output.xlsx
+├── cord.txt
+├── stress/
+│   ├── stress_0.txt
+│   ├── stress_1.txt
+│   └── ...
+└── README.md
+
+## File Descriptions
+
+### output.xlsx
+5000 rows × 226 columns. Each row is one simulation configuration.
+Each column is the thickness value at one structural node.
+
+### cord.txt
+3304 rows × 3 columns.
+Column 1: node number
+Column 2: undeformed X coordinate
+Column 3: undeformed Y coordinate
+
+### stress/ folder
+5000 text files, one per row in output.xlsx.
+Files are named stress_0.txt through stress_4999.txt.
+Each file has 3304 rows × 3 columns.
+Column 1: von Mises stress at the node
+Column 2: deformed X coordinate
+Column 3: deformed Y coordinate
